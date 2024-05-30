@@ -1,0 +1,13 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: keycloak-admin
+
+el-aparato:
+  keycloak:
+    serverUrl: http://localhost:8080
+    realm: el-aparato-serrana-marset
+    clientId: api-internal-users-client
+    clientSecret: oOxZALGXX1am5KrOtuYNwy7OVoAywsDS
