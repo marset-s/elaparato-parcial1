@@ -2,8 +2,11 @@ package com.example.gestionUsuarios.model;
 
 import lombok.*;
 
-@Getter @Setter @Builder
-@AllArgsConstructor @NoArgsConstructor
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
     private String id;
     private String userName;
