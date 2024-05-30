@@ -1,7 +1,6 @@
 package com.example.gestionUsuarios.repository;
 
 import com.example.gestionUsuarios.model.User;
-import lombok.RequiredArgsConstructor;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.beans.factory.annotation.Value;
@@ -12,17 +11,16 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Repository
-@RequiredArgsConstructor
 public class UserRepository implements IUserRepository {
     private final Keycloak keycloakClient;
 
     @Value("${el-aparato.keycloak.realm}")
     private String realm;
 
-    public UserRepository(Keycloak keycloakClient, String realm) {
+    public UserRepository(Keycloak keycloakClient) {
         this.keycloakClient = keycloakClient;
-        this.realm = realm;
     }
+
 
     @Override
     public List<User> findAll() {

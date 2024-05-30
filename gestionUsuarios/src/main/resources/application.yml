@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: keycloak-admin
+    name: gestion-usuarios
 
 el-aparato:
   keycloak:
