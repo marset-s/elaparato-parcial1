@@ -22,6 +22,12 @@ public class WebSecurityConfig {
                 .requestMatchers(HttpMethod.GET, "/api/**").hasRole(ADMIN)
                 .requestMatchers(HttpMethod.GET, "/api/ventas/**").hasRole(VENDEDOR)
                 .requestMatchers(HttpMethod.GET, "/api/productos/**").hasRole(REPOSITOR)
+                .requestMatchers(HttpMethod.POST, "/api/**").hasRole(ADMIN)
+                .requestMatchers(HttpMethod.POST, "/api/ventas/**").hasRole(VENDEDOR)
+                .requestMatchers(HttpMethod.POST, "/api/productos/**").hasRole(REPOSITOR)
+                .requestMatchers(HttpMethod.PUT, "/api/**").hasRole(ADMIN)
+                .requestMatchers(HttpMethod.PUT, "/api/ventas/**").hasRole(VENDEDOR)
+                .requestMatchers(HttpMethod.PUT, "/api/productos/**").hasRole(REPOSITOR)
                 .anyRequest().authenticated();
         http.oauth2ResourceServer()
                 .jwt()
