@@ -7,10 +7,14 @@ spring:
       default-filters:
         - TokenRelay
       routes:
-        -   id: el-aparato
-            predicates:
-              - Path=/api/**
-            uri: http://localhost:8086
+        - id: el-aparato
+          predicates:
+            - Path=/api/**
+          uri: http://localhost:8086
+        - id: el-aparato
+          predicates:
+            - Path=/users/**
+          uri: http://localhost:8181
   security:
     oauth2:
       client:
@@ -22,7 +26,6 @@ spring:
             authorization-grant-type: authorization_code
             client-id: api-gateway-client
             client-secret: biGuE4A5v1Rgg84lj34QM0B90U1yA0HA
-            #                        provider: api-gateway-service
             redirect-uri: http://localhost:9090/login/oauth2/code/keycloak
             scope:
               - openid

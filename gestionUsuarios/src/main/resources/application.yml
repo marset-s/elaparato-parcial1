@@ -1,13 +1,16 @@
 server:
   port: 8181
-
 spring:
   application:
     name: gestion-usuarios
-
+  security:
+    oauth2:
+      resource-server:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/el-aparato-serrana-marset
 el-aparato:
   keycloak:
     serverUrl: http://localhost:8080
     realm: el-aparato-serrana-marset
     clientId: api-internal-users-client
-    clientSecret: oOxZALGXX1am5KrOtuYNwy7OVoAywsDS
+    clientSecret: 0bDmNgD6UP8LZkYaS4LFidl4c57YOJI3
