@@ -20,7 +20,6 @@ public class VentaController {
 
     //crear una nueva venta
     @PostMapping("/ventas/create")
-    @PreAuthorize("hasRole('VENDEDOR')")
     public String createVentao(@RequestBody Venta vent) {
         ventServ.saveVenta(vent);
         return "Venta creada correctamente";
@@ -28,14 +27,12 @@ public class VentaController {
 
     //obtener todas las ventas
     @GetMapping("/ventas/getall")
-    @PreAuthorize("hasRole('VENDEDOR')")
     public List<Venta> getVentas () {
         return ventServ.getVentas();
     }
 
     //Modificar los datos de una venta
     @PutMapping("/ventas/edit")
-    @PreAuthorize("hasRole('VENDEDOR')")
     public String editVenta(@RequestBody Venta vent) {
         ventServ.editVenta(vent);
         return "Venta editada correctamente";
