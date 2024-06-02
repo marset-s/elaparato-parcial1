@@ -11,7 +11,7 @@ spring:
           predicates:
             - Path=/api/**
           uri: http://localhost:8086
-        - id: el-aparato
+        - id: gestion-usuarios
           predicates:
             - Path=/users/**
           uri: http://localhost:8181

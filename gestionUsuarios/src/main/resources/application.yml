@@ -3,11 +3,7 @@ server:
 spring:
   application:
     name: gestion-usuarios
-  security:
-    oauth2:
-      resource-server:
-        jwt:
-          issuer-uri: http://localhost:8080/realms/el-aparato-serrana-marset
+
 el-aparato:
   keycloak:
     serverUrl: http://localhost:8080
