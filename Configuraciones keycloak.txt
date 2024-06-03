@@ -1,0 +1,18 @@
+Reino: el-aparato-serrana-marset
+
+Roles de reino: 
+
+- app_administrador
+- app_repositor
+- app_vendedor
+
+Clientes:
+
+- api-gateway-client
+- api-internal-users-client
+
+Usuarios:
+
+- administrador.elaparato - contraseña: 123
+- repositor.elaparato - contraseña: 123
+- vendedor.elaparato - contraseña: 123
