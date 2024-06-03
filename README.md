@@ -1,6 +1,6 @@
 # 📚 Proyecto Académico de Seguridad con Spring Boot y Keycloak
 
-¡Bienvenid@ a mi proyecto sobre seguridad! 🚀 Este proyecto utiliza Spring Boot con Java y Keycloak como solución IAM (Identity and Access Management). A continuación, encontrarás una descripción de las dependencias utilizadas, las configuraciones del gateway, la aplicación principal "elaparato" y la gestión de usuarios.
+¡Bienvenid@ a mi proyecto sobre seguridad! 🚀 Este proyecto utiliza Spring Boot con Java y Keycloak como solución IAM (Identity and Access Management). A continuación, encontrarás una descripción de las dependencias utilizadas para cada módulo del proyecto y una descripción de las configuraciones en Keycloak.
 
 ## 🛠️ Dependencias
 
