@@ -1,6 +1,6 @@
 # 📚 Proyecto Académico de Seguridad con Spring Boot y Keycloak
 
-¡Bienvenid@ a mi proyecto sobre seguridad! 🚀 Este proyecto utiliza Spring Boot con Java y Keycloak como solución IAM (Identity and Access Management). A continuación, encontrarás una descripción de las dependencias utilizadas para cada módulo del proyecto y una descripción de las configuraciones en Keycloak.
+¡Bienvenid@ a mi proyecto sobre seguridad! 🚀 Este proyecto utiliza Spring Boot con Java y Keycloak como solución IAM (Identity and Access Management). A continuación, encontrarás una descripción de las dependencias utilizadas para cada módulo del proyecto, una descripción de las configuraciones en Keycloak y como ejecutarlo.✨
 
 ## 🛠️ Dependencias
 
@@ -44,9 +44,27 @@
    - `administrador.elaparato`
    - `repositor.elaparato`
    - `vendedor.elaparato `
+  
+## 🚀 Cómo Ejecutar el Proyecto
+
+1. **Clonar el Repositorio**:
+   - `git clone https://github.com/tuusuario/proyecto-seguridad.git`
+
+2. **Construir y Ejecutar el Gateway:**:
+   - `cd apigatewayelaparato`
+   - `./mvnw spring-boot:run`
+
+3. **Construir y Ejecutar la Aplicación "elaparato":**:
+   - `cd elaparato`
+   - `./mvnw spring-boot:run`
+
+4. **Construir y Ejecutar la Gestión de Usuarios "keycloak-Admin":**:
+   - `cd keycloak-admin`
+   - `./mvnw spring-boot:run`
+
 
 ## 🎉 Conclusión
 Este proyecto ha sido una experiencia increíble y me ha permitido aprender muchísimo sobre la implementación de soluciones de seguridad utilizando Spring Boot y Keycloak. 🚀 La integración de estas tecnologías no solo proporciona una gestión de identidades y accesos robusta y segura, sino que también abre las puertas a desarrollar aplicaciones escalables y seguras.
 
-El tema de la seguridad es fascinante y estoy entusiasmada por haber tenido la oportunidad de explorarlo en profundidad. Cada desafío enfrentado y resuelto ha sido una lección valiosa. ✨
+El tema de la seguridad es fascinante y estoy entusiasmada por haber tenido la oportunidad de explorarlo en profundidad. Este proyecto me ha llevado muchas horas de trabajo y dedicación, enfrentándome a varios desafíos, siendo uno de los principales la incompatibilidad de versiones. Superar estos obstáculos me ha dado una comprensión más profunda y una gran satisfacción personal.✨
 
