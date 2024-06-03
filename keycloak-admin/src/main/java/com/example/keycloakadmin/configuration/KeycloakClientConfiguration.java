@@ -1,4 +1,4 @@
-package com.example.gestionUsuarios.configuration;
+package com.example.keycloakadmin.configuration;
 
 import org.keycloak.OAuth2Constants;
 import org.keycloak.admin.client.Keycloak;
@@ -8,17 +8,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class GestionUsuariosConfiguration {
-    @Value("${el-aparato.keycloak.serverUrl}")
+public class KeycloakClientConfiguration {
+
+    @Value("${dh.keycloak.serverUrl}")
     private String serverUrl;
 
-    @Value("${el-aparato.keycloak.realm}")
+    @Value("${dh.keycloak.realm}")
     private String realm;
 
-    @Value("${el-aparato.keycloak.clientId}")
+    @Value("${dh.keycloak.clientId}")
     private String clientId;
 
-    @Value("${el-aparato.keycloak.clientSecret}")
+    @Value("${dh.keycloak.clientSecret}")
     private String clientSecret;
 
     @Bean
@@ -31,4 +32,5 @@ public class GestionUsuariosConfiguration {
                 .grantType(OAuth2Constants.CLIENT_CREDENTIALS)
                 .build();
     }
+
 }

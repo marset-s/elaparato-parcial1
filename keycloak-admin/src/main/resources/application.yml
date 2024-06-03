@@ -1,10 +1,11 @@
 server:
   port: 8181
+
 spring:
   application:
-    name: gestion-usuarios
+    name: keycloak-admin
 
-el-aparato:
+dh:
   keycloak:
     serverUrl: http://localhost:8080
     realm: el-aparato-serrana-marset

@@ -7,14 +7,15 @@ spring:
       default-filters:
         - TokenRelay
       routes:
+        - id: keycloak-admin
+          predicates:
+            - Path=/users/**
+          uri: http://localhost:8181
         - id: el-aparato
           predicates:
             - Path=/api/**
           uri: http://localhost:8086
-        - id: gestion-usuarios
-          predicates:
-            - Path=/users/**
-          uri: http://localhost:8181
+
   security:
     oauth2:
       client:

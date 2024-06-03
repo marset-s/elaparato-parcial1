@@ -1,6 +1,5 @@
-package com.example.gestionUsuarios.security;
+package com.example.keycloakadmin.security;
 
-import com.example.gestionUsuarios.security.JwtAuthConverter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;

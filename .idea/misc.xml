@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/elaparato/pom.xml" />
         <option value="$PROJECT_DIR$/apigatewayelaparato/pom.xml" />
         <option value="$PROJECT_DIR$/gestionUsuarios/pom.xml" />
+        <option value="$PROJECT_DIR$/keycloak-admin/pom.xml" />
       </list>
     </option>
   </component>
