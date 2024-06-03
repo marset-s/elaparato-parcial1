@@ -1,6 +1,6 @@
-package com.example.gestionUsuarios.repository;
+package com.example.keycloakadmin.repository;
 
-import com.example.gestionUsuarios.model.User;
+import com.example.keycloakadmin.model.User;
 
 import java.util.List;
 import java.util.Optional;

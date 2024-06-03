@@ -1,13 +1,14 @@
-package com.example.gestionUsuarios.service;
+package com.example.keycloakadmin.service;
 
-import com.example.gestionUsuarios.model.User;
-import com.example.gestionUsuarios.repository.IUserRepository;
+import com.example.keycloakadmin.model.User;
+import com.example.keycloakadmin.repository.IUserRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
 public class UserService {
+
     private IUserRepository repository;
 
     public UserService(IUserRepository repository) {
@@ -21,4 +22,5 @@ public class UserService {
     public List<User> findByUserName(String userName) {
         return repository.findByUserName(userName);
     }
+
 }
